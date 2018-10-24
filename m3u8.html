@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ckplayer6.8</title>
+<style type="text/css">
+body,td,th {
+	font-size: 14px;
+	line-height: 26px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+p {
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+}
+#a1{
+	position:relative;
+	z-index: 100;
+	width:600px;
+	height:400px;
+	float: left;
+}
+</style>
+</head>
+
+<body>
+<div id="a1"></div>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	var flashvars={
+			f:'ckplayer/m3u8.swf',
+			a:'http://192.168.83.135/hls/item2/movie.m3u8',
+			s:4
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always'};
+	var video=[];
+	CKobject.embed('ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','100%',false,flashvars,video,params);
+
+</script>
+
+</body>
+</html>
